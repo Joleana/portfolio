@@ -1,16 +1,18 @@
 import React from 'react';
-import { Header, Navbar } from './components/common';
+import { Header } from './components/common';
 
 import About from './components/About'
 import Blog from './components/Blog'
-import Contact from './components/Contact'
+import Contact from './components/contact/Contact'
 import Projects from './components/Projects'
-import Resume from './components/Resume'
-import Home from './components/Home'
+import Resume from './components/resume/Resume'
+import Home from './components/home/Home'
 
 import { Route, Switch } from "react-router-dom";
 
-import './App.css';
+
+import './sassStyles/global.scss';
+
 
 
 function App() {

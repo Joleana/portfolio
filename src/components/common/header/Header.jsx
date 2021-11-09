@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar } from '../../common'
 
-import './Header.css'
+import './Header.scss'
 
 function Header () {
 
@@ -20,12 +20,12 @@ function Header () {
       </section>
       <section className="header-bottom">
         <section className="header-bottom__github">
-          <a href="https://github.com/Joleana" target="_blank">
+          <a href="https://github.com/Joleana" target="_blank" rel="noreferrer">
             <i className="fab fa-github-square"></i>
           </a>
         </section>
         <section className="header-bottom__linkedin">
-          <a href="https://www.linkedin.com/in/joleana-shurley/" target="_blank">
+          <a href="https://www.linkedin.com/in/joleana-shurley/" target="_blank" rel="noreferrer">
             <i className="fab fa-linkedin-in"></i>
           </a>
         </section>
