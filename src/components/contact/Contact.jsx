@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Contact.scss'
+
 export default function Contact() {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
@@ -28,31 +30,9 @@ export default function Contact() {
     <section id="contact" className="">
       <div className="">
         <div className="">
-          <iframe
-            width="100%"
-            height="100%"
-            title="map"
-            className=""
-            frameBorder={3}
-            marginHeight={200}
-            marginWidth={200}
-            style={{ filter: "opacity(0.7)" }}
-            src="https://www.google.com/maps/embed/v1/place?q=6+mittenwalder+st+berlin&key=AIzaSyDCxegA2mGEpJEQZnNQAUa8QZggUc4kfW4"
-          />
-          <div className="">
-            <div className="">
-              <h2 className="">
-                EMAIL
-              </h2>
-              <a className="">
-                joleanashurley@email.com
-              </a>
-              <h2 className="">
-                PHONE
-              </h2>
-              <p className="">+49 176 851 66567</p>
-            </div>
-          </div>
+          <a href="mailto:joleanashurley@gmail.com" className="">
+            joleanashurley@email.com
+          </a>
         </div>
         <form
           netlify

@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import Goo from 'gooey-react'
 
+import './Home.scss'
+
+
 
 export default class Home extends Component {
   render() {
