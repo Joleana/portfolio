@@ -12,12 +12,16 @@
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
     "react-spring": "^9.3.0",
+    "sass": "^1.43.4",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "predeploy": "react-scripts build",
+    "provision": "aws cloudformation deploy --template-file ./cloudformation_basic.yml --stack-name hosting-bucket --parameter-overrides BucketName=joleanashurley.com",
+    "deploy": "aws s3 sync build/ s3://joleanashurley.com --delete",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
