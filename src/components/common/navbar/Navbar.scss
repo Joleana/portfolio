@@ -1,0 +1,31 @@
+@import '../../../sassStyles/variables';
+@import '../../../sassStyles/mixins';
+
+.navbar{
+  display: flex;
+//To set orientation of the items
+  flex-direction: row;
+
+// To distribute available space
+  justify-content: space-between;
+  padding: $padding;
+
+// style rules starts from Tablet Screens
+  @include query(tablet){
+    height : 100vh;
+//Changing orientation of the items
+    flex-direction: column;
+    align-items: center;
+
+//Setting gap for items Vertically
+    gap: $gap
+  }
+}
+
+.navbar-item {
+  margin-left: 3em;
+  color: inherit;
+  text-decoration: inherit;
+  text-transform: uppercase;
+  outline: none;
+}
