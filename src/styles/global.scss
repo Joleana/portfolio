@@ -1,0 +1,18 @@
+@import './_variables';
+
+// Body styles
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-family: $font-stack;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $primary-color;
+  line-height: 1.6;
+}
+
+// Layout padding for main sections
+// header, main {
+//   padding: 1rem;
+// }
