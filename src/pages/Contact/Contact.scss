@@ -1,0 +1,83 @@
+@import '../../styles/variables.scss';
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 3.9rem;
+    margin: 0 12rem;
+
+    h1 {
+        color: white;
+    }
+
+    .contact-form {
+        display: flex;
+        margin-top: 5rem;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        gap: 1rem;
+        border-radius: 10px;
+
+        > input,
+        > textarea,
+        > button {
+            width: 100%;
+            font-family: $font-stack;
+            font-size: 1rem;
+            border-radius: .5rem;
+            color: black;
+        }
+
+        > input {
+            height: 2.5rem;
+            color: var(--basecolor);
+            padding: 0.5rem;
+            border: none;
+            color: purple;
+            box-sizing: border-box;
+        }
+
+        > textarea {
+            height: 7rem;
+            border: none;
+            color: purple;
+            background-color: var(black);
+            color: var(black);
+            padding: 0.5rem;
+            resize: none;
+            box-sizing: border-box;
+        }
+
+        > button {
+
+            background: linear-gradient(45deg, #71657F, #AC7C68);
+            color: white;
+            border: none;
+            padding: 0.625rem 1.25rem;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            margin: 0.25rem 0.125rem;
+            cursor: pointer;
+            border-radius: 0.75rem;
+            z-index: 1000;
+            // box-shadow: 2px 4px 6px #424345;
+            height: 3rem;
+            // padding: 0.5rem;
+            transition: 0.4s ease-in-out;
+
+            &:hover {
+                background-color: var(black);
+            }
+        }
+    }
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(black);
+}
